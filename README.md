@@ -1,37 +1,12 @@
-## Welcome to GitHub Pages
+# Curso geometría analítica I
+## Facultad de ciencias UNAM
+### 2022 - I
 
-You can use the [editor on GitHub](https://github.com/ramonrc/curso/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ramonrc/curso/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- [Introducción](https://youtu.be/W3tLEUMzx04)
+- [Repaso](https://gistpreview.github.io/?c0f2a834cb8b939dfbc833760a0e644a/Readme.html)
+- El plano euclidiano
+  - [Espacio vectorial](https://bib-mate.s3.amazonaws.com/gai/EspacioVectorial.html)
+  - [Líneas rectas](http://bib-mate.s3.amazonaws.com/gai/Lineas.html)
+  - [Coordenadas baricentricas](http://bib-mate.s3.amazonaws.com/gai/Baricentricas.html)
+  - [Baricentro](https://gistpreview.github.io/?a76d72500aa1ce6c358fef4cb7dfcb5c/Baricentro.html)
+  - [Plano afín](https://gistpreview.github.io/?a76d72500aa1ce6c358fef4cb7dfcb5c/Afin.html)
