@@ -11,6 +11,8 @@ body {
   position: relative;
 }
 
+li {color: white;}
+
 section,
 .container,
 .container-fluid {
@@ -34,6 +36,7 @@ a {
   font-style: normal;
   font-weight: 400;
   cursor: pointer;
+  color: yellow;
 }
 a, a:hover {
   text-decoration: none;
