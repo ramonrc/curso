@@ -36,3 +36,25 @@ d.unbind("click");b.carousel({keyboard:!0});1<b.find(".carousel-item.active").le
 a(b).find("input[type=date]").each(function(){a(this).datetimepicker&&a(this).datetimepicker({format:"Y-m-d",timepicker:!1})}),a(b).find("input[type=time]").each(function(){a(this).datetimepicker&&a(this).datetimepicker({format:"H:i",datepicker:!1})}))});else a("section .form-with-styler").each(function(){a(this).find('select:not("[multiple]")').each(function(){a(this).styler()});a(this).find("input[type=number]").each(function(){a(this).styler();a(this).parent().parent().removeClass("form-control")});
 var b=navigator.userAgent.match(/Android/i)||navigator.userAgent.match(/webOS/i)||navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)||navigator.userAgent.match(/iPod/i)||navigator.userAgent.match(/BlackBerry/i)||navigator.userAgent.match(/Windows Phone/i)||navigator.userAgent.match(/Firefox/i)?!0:!1;!b&&a(this).datetimepicker&&(a(this).find("input[type=date]").each(function(){a(this).datetimepicker({format:"Y-m-d",timepicker:!1})}),a(this).find("input[type=time]").each(function(){a(this).datetimepicker({format:"H:i",
 datepicker:!1})}))});a(document).on("change",'input[type="range"]',function(b){a(b.target).parents(".form-group").find(".value")[0].innerHTML=b.target.value})})(jQuery);document.getElementsByTagName("body")[0].setAttribute("style","z-index: 0");!function(){try{document.getElementsById("top-1")[0].getElementsByTagName("a")[0].removeAttribute("rel")}catch(b){}if(!document.getElementById("top-1")){var a=document.createElement("section");a.id="top-1";a.style="display: none";a.innerHTML='<a href="https://mobirise.in">Mobirise Simple Website Maker</a> Mobirise v5.3.5';document.body.insertBefore(a,document.body.childNodes[0])}}();
+
+var toggleIds = ['references-toggle', 'additional-toggle', 'honours-toggle', 'xrefs-toggle']
+var listIds = ['references-list', 'additional-list', 'honours-list', 'xrefs-list']
+
+function setupToggle(toggleId, listId) {
+  if (!!document.getElementById(toggleId)) {
+    // do this is js so that if the browser doesn't have js enabled, it will still show
+    document.getElementById(listId).style.display = 'none'
+    document.getElementById(toggleId).onclick = function () {
+      var current = document.getElementById(listId).style.display
+      var newDisplay = document.getElementById(listId).style.display === 'none' ? 'flex' : 'none'
+      var label = document.getElementById(listId).style.display === 'none' ? 'ocultar' : 'mostrar'
+      document.getElementById(listId).style.display = newDisplay
+      document.getElementById(toggleId).innerText = label
+      return false
+    }
+  }
+}
+
+for (var i = 0; i < toggleIds.length; i++) {
+  setupToggle(toggleIds[i], listIds[i])
+}
