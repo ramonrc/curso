@@ -1,0 +1,9 @@
+body {
+  padding-top: 50px;
+    /* The image used */
+  background-image: url("/curso/assets/images/wepik-20211113-104846.png");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: 70%;
+}
