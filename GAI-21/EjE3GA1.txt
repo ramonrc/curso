@@ -1,0 +1,39 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage[a4paper,top=2cm,bottom=3cm,left=1cm,right=1.5cm,marginparwidth=1.75cm]{geometry} 
+%\usepackage[mathcal]{euscript}
+\usepackage{bbold}
+%\input{00.preamble} %% Ustedes no necesitan este comando, pero con los cinco siguientes debería funcionar bien su archivo. 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{multicol} % Para usar columnas.
+%\usepackage{concrete} %% letra curiosa, de la tarea pasada. 
+
+\title{\vspace{-7ex}
+\textbf{Tercer examen parcial}\\
+{\scshape{Geometría Analítica I}} \\ 
+\vspace{-1.5ex}} 
+
+\author{\ } 
+\date{Fecha de entrega: \ldots}
+%{\vspace{-5ex}} % Para que no aparezca la fecha y se aproveche ese espacio. 
+
+\begin{document}
+\maketitle
+\vspace{-5ex} 
+
+\begin{enumerate}
+    \item Demuestre que existe un subgrupo $G \subset \mathrm{GL}(3)$ esencialmente igual a $\mathrm{Af}(2)$. Es decir, demuestre que existe una función biyectiva $\Phi: \mathrm{Af}(2) \to G$ tal que, para cualesquiera $f, g \in \mathrm{Af}(2)$, $\Phi(f \circ g) = \Phi(f) \circ \Phi(g)$. 
+    
+    \item 
+    \begin{itemize}
+      \item Encuentre una \textbf{transformación} afín $f$ (del plano) que mande el eje $X$ en la recta $\ell: \frac{1}{2} x - \frac{\sqrt{3}}{2} y = 3$ y cumpla $f(1, 1) = (-1, 1)$. ¿Existe alguna otra transformación que haga lo mismo?
+      \item Encuentre una \textbf{función} afín que mande todo el plano en la recta $\ell: \frac{1}{2} x - \frac{\sqrt{3}}{2} y = 3$ y cumpla $f(1, 0) = (0, - 2\sqrt{3})$. 
+      \item Encuentre una \textbf{isometría} que mande el eje $Y$ en la recta $\mathcal{J}: x + y = 7$ y cumpla $g(0,0) = (3, 4)$. ¿Existe alguna otra isometría que haga lo mismo?
+    \end{itemize} 
+    
+    \item Demuestre el análogo al \emph{teorema de tres en tres} (del plano) para $\mathbb{R}^3$, este establece lo siguiente: dados cuatro puntos $\mathbf{a}_{0}, \mathbf{a}_{1}, \mathbf{a}_{2}, \mathbf{a}_{3} \in \mathbb{R}^3$ no coplanares existe una única transformación afín $f: \mathbb{R}^3 \to \mathbb{R}^3$ tal que, para cada $i \in \{0, 1, 2, 3\},\ f(\mathbf{e}_{i}) = \mathbf{a}_{i}$ (con $\mathbf{e}_{0} = \mathbf{0}$). Concluya que dada otra cuaterna de puntos no coplanares $\mathbf{b}_{0}, \mathbf{b}_{1}, \mathbf{b}_{2}, \mathbf{b}_{4}$ hay una única transformación afín $F$ que cumple, para cada $i \in \{0, 1, 2, 3\},\ F(\mathbf{a}_{i}) = \mathbf{b}_{i}$. 
+    
+    \item Demuestre que dada transformación \underline{afín} $f: \mathbb{R}^2 \to \mathbb{R}^2$ que mande $\mathbb{S}^1$ en sí mismo, necesariamente es una transformación ortogonal. \\
+    \emph{Sugerencia:} Observe que $f$ preserva normas. 
+\end{enumerate} 
+
+\end{document}

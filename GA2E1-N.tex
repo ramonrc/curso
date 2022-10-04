@@ -1,0 +1,140 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[a4paper,top=2cm,bottom=2cm,left=1cm,right=1.5cm,marginparwidth=1.75cm]{geometry} 
+\usepackage[spanish]{babel}
+\usepackage{enumitem}
+\usepackage{amsmath,amsthm,amssymb}
+\renewcommand{\labelitemi}{$\bullet$}
+\usepackage{xcolor}
+\usepackage{MnSymbol}
+
+\title{\vspace{-5ex}
+(Propuesta de) \textbf{\scshape{\color{purple}  Examen 1. \\ Geometría Analítica II}}\\
+(Grupo 4101 - Semestre 2022-2) \\
+%
+\vspace{-1.5ex}}
+\author{Profesor: Ramón Reyes Carrión} 
+%Fecha de entrega: Jueves 12 de agosto de 2021.}
+\date{Martes \today} % Para que no aparezca la fecha y se aproveche ese espacio. 
+
+%\color{white} % Para que las letras sean blancas en todo el documento.
+\begin{document}
+%\pagecolor{black} % Para que el color de la hoja sea negro. 
+\maketitle % Para que aparezca el título del documento 
+%\tableofcontents % Para que aparezca la tabla de contenidos.
+%\renewcommand{\labelenumi}{\alph{enumi})} % Para que la enumeración de listas ordenadas se empiece con letras (minúsculas) y no con números. 
+%
+%
+\begin{enumerate}
+\item Demuestre que, si dos planos $\Pi_{1},\Pi_{2}$ en $\mathbb{R}^3$ tienen un punto en común, entonces tienen una infinidad de puntos en común. ¿Lo mismo es cierto en $\mathbb{R}^4$?\footnote{En este caso, piense a los planos descritos de manera \emph{paramétrica o baricéntrica}.}
+
+\textbf{\color{blue}\underline{Definición}:} En $\mathbb{R}^4$, un \emph{hiperplano} $\mathcal{H}$ es un conjunto de forma $\mathcal{H} = \{\mathbf{x} \in \mathbb{R}^4 : \mathbf{n} \cdot \mathbf{x} = c\}$, donde $\mathbf{n} \in \mathbb{R}^4$ es un vector no nulo y $c\in\mathbb{R}$ es una constante. En este caso, a $\mathbf{n}$ se le llama \emph{vector normal} al hiperplano $\mathcal{H}$. 
+
+\item Demuestre que cualesquiera dos hiperplanos, en $\mathbb{R}^4$, $\mathcal{H}_{1}, \mathcal{H}_{2}$ \textbf{cuyos vectores normales son linealmente independientes}, tienen intersección no vacía. Más aún, \underline{pruebe que} dicha intersección contiene un plano\footnote{Nuevamente, piense al plano descrito de manera \emph{paramétrica o baricéntrica}.}. 
+
+\item Define lo que debería ser un \emph{hiperplano paramétrico} en $\mathbb{R}^4$ y demuestra que todo hiperplano \textquotedblleft{normal}\textquotedblright%
+\footnote{Como en la definición que dimos anteriormente.} 
+%
+es un hiperplano paramétrico. Dando por hecho la noción del Ejercicio 7, también demuestra el recíproco (es decir, de que todo hiperplano paramétrico es un hiperplano normal). 
+
+\item 
+\begin{itemize}
+\item ¿Cuáles de las siguientes cuartetas de puntos son \emph{coplanares}%
+\footnote{Coplanar, en este casi, quiere decir que existe un plano que tiene a los cuatro puntos.}%
+%
+? 
+En caso que lo sean, encuentra la ecuación normal del plano en el que están. 
+\begin{enumerate}
+    \item $\mathbf{a} = (2, - 1, 0),\ \mathbf{b} = (1, 2,- 2)\ \mathbf{c} = (0, 1, 0)$ y $\mathbf{d} = (4, -1, - 1)$.
+    \item $\mathbf{a} = (2, - 1, 0),\ \mathbf{b} = (1, 2,- 2)\ \mathbf{c} = (0, 1, 0)$ y $\mathbf{d} = (3, -1, - 1)$.
+\end{enumerate} 
+\item Encuentra un criterio general para saber si cuatro puntos $\mathbf{a},\ \mathbf{b},\ \mathbf{c}$ y $\mathbf{d}$ son coplanares o no, y demuéstralo. 
+\end{itemize} 
+
+\item Demuestre la siguiente proposición, que puede pensarse como un \emph{Principio de Inducción en $\mathbb{R}^3$}: 
+\\
+Sea $P$ una propiedad sobre vectores en $\mathbb{R}^3$ tal que:
+\begin{itemize}
+    \item $P(\mathbf{e}_{1}),\ P(\mathbf{e}_{2})$ y $P(\mathbf{e}_{3})$ son verdaderas. 
+    \item Cada vez que se tienen dos vectores $u, v \in \mathbb{R}^3$ de modo que $P(u)$ y $P(v)$ son verdaderas, $P(u + v)$ también es verdadera. 
+    \item Cada vez que se tienen un vector $u\in \mathbb{R}^3$ de modo que $P(u)$ es verdadera y $\lambda \in \mathbb{R}$, $P(\lambda u)$ también es verdadera. 
+\end{itemize} 
+Entonces $P$ es verdadera en cualquier vector $\mathbf{x} \in \mathbb{R}^3$. 
+
+\textbf{Nota:} Así como en el conjunto de los Números Naturales, $\mathbb{N}$, tenemos el \emph{Principio de Inducción}, en este ejercicio tenemos una especie de Inducción en $\mathbb{R}^3$. 
+
+\item 
+\begin{enumerate}
+  \item Sean $\mathbf{n} \in \mathbb{R}^3 \setminus \{\mathbf{0}\}$ un vector arbitrario y $k \in \mathbb{R}$ una constante. Si $\mathbf{a},\ \mathbf{b},\ \mathbf{c} \in \mathbb{R}^3$ son soluciones a la ecuación $\mathbf{n} \cdot \mathbf{x} = k$, entonces cualquier combinación afín de estos puntos también es solución a la misma ecuación. 
+  \item Usando el inciso anterior, demuestre que toda recta que pase por dos puntos de un plano $\Pi$ se queda contenida en dicho plano. 
+  \item Sean $\mathbf{n} \in \mathbb{R}^4 \setminus \{\mathbf{0}\}$ un vector arbitrario y $k \in \mathbb{R}$ una constante. Si $\mathbf{a},\ \mathbf{b},\ \mathbf{c},\ \mathbf{d}\in \mathbb{R}^3$ son soluciones a la ecuación $\mathbf{n} \cdot \mathbf{x} = k$, entonces cualquier combinación afín de estos puntos también es solución a la misma ecuación. 
+  \item Usando el inciso anterior, demuestre que todo plano que pase por tres puntos de un hiperplano $\mathcal{H}$ se queda contenida en dicho hiperplano. 
+\end{enumerate} 
+
+\item Generalice el producto cruz de $\mathbb{R}^3$ a $\mathbb{R}^4$. Esto es: dados tres vectores en $\mathbb{R}^4$ linealmente independientes\footnote{Es decir, que no existe un plano \underline{por el origen} que tenga a esos tres vectores.}, encontrar un cuarto vector que sea perpendicular a ellos. Justifique su razonamiento y demuestre que su propuesta cumple lo deseado.
+
+\item 
+\begin{itemize}
+    \item Suponga $\mathbf{f}_{1}, \mathbf{f}_{2}, \mathbf{f}_{3} \in \mathbb{R}^3$ forman una base ortonormal. Demuestre que si $\alpha, \beta, \gamma \in \mathbb{R}$ son escalares tales que: 
+\[
+    \alpha \mathbf{f}_{1} + \beta \mathbf{f}_{2} + \gamma \mathbf{f}_{3} = \mathbf{0},
+\]
+    necesariamente se tendrá que $\alpha = \beta = \gamma = 0$. 
+    \item Exhiba un procedimiento con el cual:
+    \begin{enumerate}
+        \item A partir de un vector $u \in \mathbb{R}^2\setminus \{\mathbf{0}\}$, se obtenga una base ortonormal de $\mathbb{R}^3$. 
+        \item A partir de dos vectores $u, v \in \mathbb{R}^3$ linealmente independientes, se obtenga una base ortonormal de $\mathbb{R}^3$. 
+        \item A partir de tres vectores $\mathbf{u}, \mathbf{v}, \mathbf{w} \in \mathbb{R}^4$ linealmente independientes, se obtenga una base ortonormal de $\mathbb{R}^4$. 
+    \end{enumerate} 
+\end{itemize} 
+
+\item Encuentre las descripciones 
+\begin{enumerate}
+    \item Paramétrica y normal del plano (en $\mathbb{R}^3$) que pasa por los puntos $\mathbf{a} = (1, 2, 3),\ \mathbf{b} = (-1, 7, 0)$ y $\mathbf{c} = (0, 6, 8)$. 
+    \item Baricéntrica y paramétrica del plano (en $\mathbb{R}^3$) $\Pi: 3z - x = 6$. ¿Te sirvió el \emph{truco} de intersecar con los ejes? ¿Por qué? 
+\end{enumerate} 
+
+\item Resuelva los siguientes ejercicios:
+\begin{itemize}
+\item Encuentra una descripción paramétrica para la recta de intersección de las siguientes parejas de planos:
+\[
+\begin{array}{llcrl}
+    \Pi_{1}: & 2 x+y-z=1 & \quad\text{y}\quad & \Pi_{2}: & -2 x+y-3 z=3. 
+    \\
+    \Pi_{1}: & x-y-z=0 & \quad\text{y}\quad & \Pi_{2}: &  \phantom{-} x+y-z=1. 
+    \\
+    \Pi_{1}: & 2 x+y-z=2 & \quad\text{y}\quad & \Pi_{2}: & -x+y-2 z=2. 
+    \\
+    \Pi_{1}: & 2 x+z=1 & \quad\text{y}\quad & \Pi_{2}: & -2 x+z=3.
+\end{array} 
+\]
+
+\item Describe las siguientes rectas intrínsecamente, es decir, como las soluciones de dos ecuaciones lineales:
+\begin{align*}
+\ell_{1} & =\{(2 + t, 1 - 2t, 3t -  3) \mid  t \in \mathbb{R}\}
+\\
+\ell_{2} & =\{(s, 2 - 3 s, 2s - 3) \mid s \in \mathbb{R}\}
+\end{align*} 
+\end{itemize}
+
+\item Sea $\Pi$ el plano dado por la ecuación $\mathbf{n} \cdot \mathbf{x} = c$ y sea $\ell$ la recta $\{\mathbf{p}+ t \mathbf{d} \mid  t \in \mathbb{R}\}$. Demuestra (sustituyendo la expresión de los puntos de $\ell$ en la ecuación de $\Pi$) que $\Pi$ y $\ell$ se intersectan en un único punto \emph{si, y sólo si}, $\mathbf{n} \cdot \mathbf{d} \neq 0$. Observa que si no es así (es decir, si $\mathbf{n} \cdot \mathbf{d}=0$) entonces la dirección $\mathbf{d}$ es paralela al plano; por tanto demostraste que un plano y una recta se intersectan en un único punto \emph{si, y sólo si}, la direccion de la recta no es paralela al plano.
+
+\item Sean $\mathbf{u}, \mathbf{v}, \mathbf{w}$ tres vectores tales que $(\mathbf{u} \times \mathbf{v}) \cdot \mathbf{w} \neq 0$. Demuestra que tres planos normales a $\mathbf{u}, \mathbf{v}$ y $\mathbf{w}$ respectivamente se intersectan en un único punto.
+
+\item Resuelva los siguientes ejercicios:
+\begin{itemize}
+\item Demuestra que el determinante cumple las siguientes propiedades
+\begin{enumerate}
+  \item $\det(\mathbf{u}, \mathbf{v}, \mathbf{w})=-\det(\mathbf{v}, \mathbf{u}, \mathbf{w})=-\det(\mathbf{u}, \mathbf{w}, \mathbf{v})=-\det(\mathbf{w}, \mathbf{v}, \mathbf{u})$. 
+  \item $\det(\mathbf{u}, \mathbf{u}, \mathbf{v})=0$
+  \item $\det( t \mathbf{u}, \mathbf{v}, \mathbf{w})= t \det(\mathbf{u}, \mathbf{v}, \mathbf{w})$
+  \item $\det(\mathbf{u}+\mathbf{x}, \mathbf{v}, \mathbf{w})=\det(\mathbf{u}, \mathbf{v}, \mathbf{w})+\det(\mathbf{x}, \mathbf{v}, \mathbf{w})$
+\end{enumerate}
+
+\item Demuestra, usando únicamente el ejercicio anterior, que el determinante no cambia si sumamos un múltiplo de un vector a alguno de los otros, es decir, que
+$$
+\det(\mathbf{u}, \mathbf{v}+ t \mathbf{u}, \mathbf{w})=\det(\mathbf{u}, \mathbf{v}, \mathbf{w})
+$$
+\end{itemize}
+\end{enumerate} 
+
+\end{document}
