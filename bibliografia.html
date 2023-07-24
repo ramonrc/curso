@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+    <meta charset="utf-8">
+    <script id="djvu_js_lib" src="djvu.js"></script>
+    <script src="djvu_viewer.js"></script>
+    <script src="reloader.js"></script>
+
+    <script>
+        window.onload = function() {
+            // save as a global value
+            window.ViewerInstance = new DjVu.Viewer();
+            // render into the element
+            window.ViewerInstance.render(
+                document.querySelector("#for_viewer")
+            );
+
+            // get all special links
+            document.querySelectorAll('a.djvu').forEach(link => {
+                link.addEventListener('click', e => {
+                    // we don't want to download the file
+                    e.preventDefault();
+                    // open the file in the viewer by its url
+                    ViewerInstance.loadDocumentByUrl(link.href);
+                });
+            });
+        };
+    </script>
+
+    <style>
+        /* make it pretty-looking */
+
+        body {
+            height: 100vh;
+            margin: 0;
+        }
+
+        #for_viewer {
+            height: 80vh;
+            width: 90vw;
+            margin: 5vh auto;
+            border: 1px solid black;
+        }
+
+        a.djvu {
+            display: inline-block;
+            margin: 2vh 2vw;
+            border: 1px solid gray;
+            text-decoration: none;
+            color: inherit;
+            padding: 1vh 1vw;
+            border-radius: 0.5em;
+        }
+
+        a.djvu:hover {
+            background: lightgray;
+        }
+    </style>
+
+</header>
+
+<body>
+    <a href="https://bib-mate.s3.us-east-2.amazonaws.com/Robert%20Messer%20-%20Linear%20Algebra_%20Gateway%20to%20Mathematics-Addison%20Wesley%20(1997).djvu" class="djvu">Messer</a>
+    <a href="https://bib-mate.s3.us-east-2.amazonaws.com/(Graduate%20Texts%20in%20Mathematics)%20N.%20Jacobson%20-%20Lectures%20in%20abstract%20algebra_%20Linear%20algebra.%20Volume%202-Springer%20(1984).djvu" class="djvu">Jacobson</a>
+    <div id="for_viewer"></div>
+</body>
+
+</html>
